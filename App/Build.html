@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Build | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Build" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../App.html">App</a></li><li class="backslash">\</li><li>Build</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Build
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Build</strong>        extends <a href="../KhsCI/Support/DBModel.html"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_table">
+                    static                    protected                                        
+                </td>
+                <td>$table</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#property_table"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_set_array">
+                    static                    protected                                        
+                </td>
+                <td>$set_array</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#property_set_array"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>()
+        
+                                            <p>取得所有数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_all"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(int $table_primary_key_id)
+        
+                                            <p>通过主键查找数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_find"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(int|array $table_primary_key_id)
+        
+                                            <p>通过主键查找数据，找不到则抛出异常.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_findOrFail"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTableName">getTableName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_getTableName"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_save"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>($name, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method___set"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastKeyId">getLastKeyId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_getLastKeyId"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStartAt">getStartAt</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStopAt">getStopAt</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGitType">getGitType</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRid">getRid</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateBuildStatus">updateBuildStatus</a>(int $build_key_id, string|null $status)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateBuildStatusByCommitId">updateBuildStatusByCommitId</a>(string $build_status, int $rid, string $branch, string $commit_id, $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBuildStatus">getBuildStatus</a>(int $rid, string $branch)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildStatusIsChanged">buildStatusIsChanged</a>(int $rid, string $branch)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBranches">getBranches</a>(int $rid, $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentBuildKeyId">getCurrentBuildKeyId</a>(int $rid, $git_type = &#039;github&#039;)
+        
+                                            <p>某仓库最新的一次构建 ID PR 除外.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConfig">getConfig</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBuildStatusByBuildKeyId">getBuildStatusByBuildKeyId</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allByBranch">allByBranch</a>(int $rid, string $branch_name, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
+        
+                                            <p>某分支的构建列表.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allByRid">allByRid</a>(int $rid, int|null $before, int|null $limit, bool $pr, $git_type = &#039;github&#039;)
+        
+                                            <p>某仓库的构建列表.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allByAdmin">allByAdmin</a>(int $uid, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
+        
+                                            <p>某用户的构建列表.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommitterEmail">getCommitterEmail</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommitterName">getCommitterName</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertTag">insertTag</a>($branch, $tag, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insert">insert</a>($event_type, $branch, $compare, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertPing">insertPing</a>($rid, $created_at, $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_insertPullRequest">insertPullRequest</a>($event_time, string $action, string $commit_id, string $commit_message, int $committer_uid, string $committer_username, $pull_request_number, string $branch, $rid, string $config, $internal, $pull_request_source, string $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateCheckSuiteId">updateCheckSuiteId</a>(int $rid, string $commit_id, int $check_suite_id, string $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_all"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 23</div>
+        <code>        static            array|string
+    <strong>all</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得所有数据.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_find"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 41</div>
+        <code>        static            int|array
+    <strong>find</strong>(int $table_primary_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$table_primary_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_findOrFail"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 65</div>
+        <code>        static            array|int
+    <strong>findOrFail</strong>(int|array $table_primary_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找数据，找不到则抛出异常.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|array</td>
+                <td>$table_primary_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableName">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_getTableName"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 79</div>
+        <code>        static            null|string
+    <strong>getTableName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_save"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 94</div>
+        <code>                    void
+    <strong>save</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method___set"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 107</div>
+        <code>                    void
+    <strong>__set</strong>($name, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastKeyId">
+        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_getLastKeyId"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 119</div>
+        <code>        static            array|string
+    <strong>getLastKeyId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStartAt">
+        <div class="location">at         line 21</div>
+        <code>        static            string
+    <strong>getStartAt</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStopAt">
+        <div class="location">at         line 35</div>
+        <code>        static            string
+    <strong>getStopAt</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGitType">
+        <div class="location">at         line 49</div>
+        <code>        static            string
+    <strong>getGitType</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRid">
+        <div class="location">at         line 63</div>
+        <code>        static            int
+    <strong>getRid</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBuildStatus">
+        <div class="location">at         line 84</div>
+        <code>        static            int
+    <strong>updateBuildStatus</strong>(int $build_key_id, string|null $status)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBuildStatusByCommitId">
+        <div class="location">at         line 102</div>
+        <code>        static            int
+    <strong>updateBuildStatusByCommitId</strong>(string $build_status, int $rid, string $branch, string $commit_id, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$build_status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBuildStatus">
+        <div class="location">at         line 121</div>
+        <code>        static            string
+    <strong>getBuildStatus</strong>(int $rid, string $branch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildStatusIsChanged">
+        <div class="location">at         line 136</div>
+        <code>        static            bool
+    <strong>buildStatusIsChanged</strong>(int $rid, string $branch)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBranches">
+        <div class="location">at         line 157</div>
+        <code>        static            array
+    <strong>getBranches</strong>(int $rid, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentBuildKeyId">
+        <div class="location">at         line 174</div>
+        <code>        static            string
+    <strong>getCurrentBuildKeyId</strong>(int $rid, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>某仓库最新的一次构建 ID PR 除外.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConfig">
+        <div class="location">at         line 197</div>
+        <code>        static            string
+    <strong>getConfig</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBuildStatusByBuildKeyId">
+        <div class="location">at         line 211</div>
+        <code>        static            string
+    <strong>getBuildStatusByBuildKeyId</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allByBranch">
+        <div class="location">at         line 231</div>
+        <code>        static            array
+    <strong>allByBranch</strong>(int $rid, string $branch_name, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>某分支的构建列表.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$branch_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$before</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allByRid">
+        <div class="location">at         line 265</div>
+        <code>        static            array
+    <strong>allByRid</strong>(int $rid, int|null $before, int|null $limit, bool $pr, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>某仓库的构建列表.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$before</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_allByAdmin">
+        <div class="location">at         line 297</div>
+        <code>        static            array
+    <strong>allByAdmin</strong>(int $uid, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>某用户的构建列表.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$before</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommitterEmail">
+        <div class="location">at         line 321</div>
+        <code>        static            array
+    <strong>getCommitterEmail</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommitterName">
+        <div class="location">at         line 335</div>
+        <code>        static            array
+    <strong>getCommitterName</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertTag">
+        <div class="location">at         line 362</div>
+        <code>        static            int
+    <strong>insertTag</strong>($branch, $tag, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tag</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$commit_message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$event_time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insert">
+        <div class="location">at         line 421</div>
+        <code>        static            int
+    <strong>insert</strong>($event_type, $branch, $compare, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$event_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$compare</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$commit_message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$committer_username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_email</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$author_username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$event_time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertPing">
+        <div class="location">at         line 469</div>
+        <code>        static            int
+    <strong>insertPing</strong>($rid, $created_at, $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$created_at</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_insertPullRequest">
+        <div class="location">at         line 504</div>
+        <code>        static            int
+    <strong>insertPullRequest</strong>($event_time, string $action, string $commit_id, string $commit_message, int $committer_uid, string $committer_username, $pull_request_number, string $branch, $rid, string $config, $internal, $pull_request_source, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$event_time</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$committer_uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$committer_username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pull_request_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$branch</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$internal</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pull_request_source</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateCheckSuiteId">
+        <div class="location">at         line 549</div>
+        <code>        static            void
+    <strong>updateCheckSuiteId</strong>(int $rid, string $commit_id, int $check_suite_id, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$check_suite_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
