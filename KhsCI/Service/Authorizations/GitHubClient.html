@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>KhsCI\Support\Request | API</title>
+    <title>KhsCI\Service\Authorizations\GitHubClient | API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
-        <script src="../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../js/bootstrap.min.js"></script>
-        <script src="../../js/typeahead.min.js"></script>
-        <script src="../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -19,14 +19,14 @@
     
     </head>
 
-    <body id="class" data-name="class:KhsCI_Support_Request" data-root-path="../../">
+    <body id="class" data-name="class:KhsCI_Service_Authorizations_GitHubClient" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../search.html" method="GET">
+        <form id="search-form" action="../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -48,16 +48,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../index.html">API</a>
+                <a class="navbar-brand" href="../../../index.html">API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../classes.html">Classes</a></li>
-                                            <li><a href="../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../traits.html">Traits</a></li>
-                    <li><a href="../../doc-index.html">Index</a></li>
-                    <li><a href="../../search.html">Search</a></li>
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../KhsCI.html">KhsCI</a></li><li class="backslash">\</li><li><a href="../../KhsCI/Support.html">Support</a></li><li class="backslash">\</li><li>Request</li>
+                        <li><a href="../../../KhsCI.html">KhsCI</a></li><li class="backslash">\</li><li><a href="../../../KhsCI/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../KhsCI/Service/Authorizations.html">Authorizations</a></li><li class="backslash">\</li><li>GitHubClient</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            Request
+            GitHubClient
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>Request</strong>        extends <abbr title="Symfony\Component\HttpFoundation\Request">Request</abbr>
+    <strong>GitHubClient</strong>
 </p>
 
         
@@ -88,16 +88,29 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_app">
+                                                                                <a href="../../../KhsCI/KhsCI.html"><abbr title="KhsCI\KhsCI">KhsCI</abbr></a>
+                </td>
+                <td>$app</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getAllHeaders">getAllHeaders</a>()
+                    <a href="#method___construct">__construct</a>(<a href="../../../KhsCI/KhsCI.html"><abbr title="KhsCI\KhsCI">KhsCI</abbr></a> $app)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -105,21 +118,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getHeader">getHeader</a>($header = null, $default = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;array
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_parseLink">parseLink</a>(string $link = null)
+                    <a href="#method_list">list</a>(string $username, string $password)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -132,29 +134,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_getAllHeaders">
-        <div class="location">at         line 9</div>
-        <code>        static            
-    <strong>getAllHeaders</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getHeader">
-        <div class="location">at         line 26</div>
-        <code>        static            
-    <strong>getHeader</strong>($header = null, $default = null)
+                    <h3 id="method___construct">
+        <div class="location">at         line 20</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../KhsCI/KhsCI.html"><abbr title="KhsCI\KhsCI">KhsCI</abbr></a> $app)
         </code>
     </h3>
     <div class="details">
@@ -166,13 +149,8 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$header</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$default</td>
+                <td><a href="../../../KhsCI/KhsCI.html"><abbr title="KhsCI\KhsCI">KhsCI</abbr></a></td>
+                <td>$app</td>
                 <td></td>
             </tr>
             </table>
@@ -185,10 +163,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_parseLink">
-        <div class="location">at         line 42</div>
-        <code>        static            array
-    <strong>parseLink</strong>(string $link = null)
+                    <h3 id="method_list">
+        <div class="location">at         line 36</div>
+        <code>                    mixed
+    <strong>list</strong>(string $username, string $password)
         </code>
     </h3>
     <div class="details">
@@ -201,7 +179,12 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$link</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
                 <td></td>
             </tr>
             </table>
@@ -211,13 +194,39 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://github.com/settings/tokens">https://github.com/settings/tokens</a>
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            <a href="https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations">https://developer.github.com/v3/oauth_authorizations/#list-your-authorizations</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
                     </div>
     </div>
 
