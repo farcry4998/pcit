@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>KhsCI\Service\Build\Agent\RunContainer | API</title>
+    <title>KhsCI\Service\Build\Events\Notifications | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:KhsCI_Service_Build_Agent_RunContainer" data-root-path="../../../../">
+    <body id="class" data-name="class:KhsCI_Service_Build_Events_Notifications" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../KhsCI.html">KhsCI</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build.html">Build</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build/Agent.html">Agent</a></li><li class="backslash">\</li><li>RunContainer</li>
+                        <li><a href="../../../../KhsCI.html">KhsCI</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build.html">Build</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build/Events.html">Events</a></li><li class="backslash">\</li><li>Notifications</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            RunContainer
+            Notifications
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>RunContainer</strong>
+    <strong>Notifications</strong>
 </p>
 
         
@@ -88,19 +88,39 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_build_key_id">
+                                                                                
+                </td>
+                <td>$build_key_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_notifications">
+                                                                                
+                </td>
+                <td>$notifications</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_handle">handle</a>(int $job_id)
+                    <a href="#method___construct">__construct</a>(int $build_key_id, mixed $notifications = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Notification constructor.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -108,20 +128,10 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_runCacheContainer">runCacheContainer</a>(int $job_id, bool $download = true)
+                    <a href="#method_handle">handle</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_runPipeline">runPipeline</a>(int $job_id, string $container_config)
-        
-                                            <p>启动容器.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -131,113 +141,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_handle">
-        <div class="location">at         line 37</div>
-        <code>                    void
-    <strong>handle</strong>(int $job_id)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>int</td>
-                <td>$job_id</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../KhsCI/CIException.html"><abbr title="KhsCI\CIException">CIException</abbr></a></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_runCacheContainer">
-        <div class="location">at         line 170</div>
-        <code>                    void
-    <strong>runCacheContainer</strong>(int $job_id, bool $download = true)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>int</td>
-                <td>$job_id</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$download</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_runPipeline">
-        <div class="location">at         line 198</div>
-        <code>                    void
-    <strong>runPipeline</strong>(int $job_id, string $container_config)
+                    <h3 id="method___construct">
+        <div class="location">at         line 19</div>
+        <code>                    
+    <strong>__construct</strong>(int $build_key_id, mixed $notifications = null)
         </code>
     </h3>
     <div class="details">
@@ -245,23 +152,42 @@
     
 
                     <div class="method-description">
-                                    <p>启动容器.</p>                                                </div>
+                                    <p>Notification constructor.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>int</td>
-                <td>$job_id</td>
+                <td>$build_key_id</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
-                <td>$container_config</td>
+                <td>mixed</td>
+                <td>$notifications</td>
                 <td></td>
             </tr>
             </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at         line 28</div>
+        <code>                    void
+    <strong>handle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
