@@ -233,6 +233,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_allByBuildKeyID">allByBuildKeyID</a>(int $build_key_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;int
                 </div>
                 <div class="col-md-8 type">
@@ -292,6 +303,17 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_updateBuildStatus">updateBuildStatus</a>(int $job_key_id, string|null $status)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBuildStatus">getBuildStatus</a>(int $job_key_id)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -828,8 +850,55 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getRid">
+                    <h3 id="method_allByBuildKeyID">
         <div class="location">at         line 86</div>
+        <code>        static            array|string
+    <strong>allByBuildKeyID</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$build_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRid">
+        <div class="location">at         line 100</div>
         <code>        static            int
     <strong>getRid</strong>(int $job_id)
         </code>
@@ -876,7 +945,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateStartAt">
-        <div class="location">at         line 151</div>
+        <div class="location">at         line 165</div>
         <code>        static            int
     <strong>updateStartAt</strong>(int $job_id, int $time = null)
         </code>
@@ -928,7 +997,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStartAt">
-        <div class="location">at         line 163</div>
+        <div class="location">at         line 177</div>
         <code>        static            string
     <strong>getStartAt</strong>(int $job_id)
         </code>
@@ -975,7 +1044,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateFinishedAt">
-        <div class="location">at         line 178</div>
+        <div class="location">at         line 192</div>
         <code>        static            int
     <strong>updateFinishedAt</strong>(int $job_id, int $time = null)
         </code>
@@ -1027,7 +1096,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFinishedAt">
-        <div class="location">at         line 190</div>
+        <div class="location">at         line 204</div>
         <code>        static            int
     <strong>getFinishedAt</strong>(int $job_id)
         </code>
@@ -1074,7 +1143,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateBuildStatus">
-        <div class="location">at         line 205</div>
+        <div class="location">at         line 219</div>
         <code>        static            int
     <strong>updateBuildStatus</strong>(int $job_key_id, string|null $status)
         </code>
@@ -1125,8 +1194,55 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getBuildStatus">
+        <div class="location">at         line 233</div>
+        <code>        static            array|string
+    <strong>getBuildStatus</strong>(int $job_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$job_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getCheckRunId">
-        <div class="location">at         line 219</div>
+        <div class="location">at         line 247</div>
         <code>        static            int
     <strong>getCheckRunId</strong>(int $build_key_id)
         </code>
@@ -1173,7 +1289,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateCheckRunId">
-        <div class="location">at         line 234</div>
+        <div class="location">at         line 262</div>
         <code>        static            void
     <strong>updateCheckRunId</strong>(int|null $check_run_id, int $build_key_id)
         </code>
@@ -1225,7 +1341,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getGitType">
-        <div class="location">at         line 248</div>
+        <div class="location">at         line 276</div>
         <code>        static            string
     <strong>getGitType</strong>(int $job_key_id)
         </code>
@@ -1272,7 +1388,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBuildKeyId">
-        <div class="location">at         line 262</div>
+        <div class="location">at         line 290</div>
         <code>        static            int
     <strong>getBuildKeyId</strong>(int $job_key_id)
         </code>

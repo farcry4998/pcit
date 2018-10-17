@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>App\Http\Controllers\Users\OAuthGiteeController | API</title>
+    <title>KhsCI\Service\Build\Conditional\Kernel | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:App_Http_Controllers_Users_OAuthGiteeController" data-root-path="../../../../">
+    <body id="class" data-name="class:KhsCI_Service_Build_Conditional_Kernel" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers/Users.html">Users</a></li><li class="backslash">\</li><li>OAuthGiteeController</li>
+                        <li><a href="../../../../KhsCI.html">KhsCI</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build.html">Build</a></li><li class="backslash">\</li><li><a href="../../../../KhsCI/Service/Build/Conditional.html">Conditional</a></li><li class="backslash">\</li><li>Kernel</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            OAuthGiteeController
+            Kernel
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>OAuthGiteeController</strong>        extends <a href="../../../../App/Http/Controllers/Users/OAuthKernel.html"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a>
+    <strong>Kernel</strong>
 </p>
 
         
@@ -92,28 +92,20 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_oauth">
-                    static                    protected                                        
+                <td class="type" id="property_conditional">
+                                                                                
                 </td>
-                <td>$oauth</td>
+                <td>$conditional</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_git_type">
-                    static                    protected                                        
+                <td class="type" id="property_current">
+                                                                                
                 </td>
-                <td>$git_type</td>
+                <td>$current</td>
                 <td class="last"></td>
                 <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_state">
-                                        protected                                        bool
-                </td>
-                <td>$state</td>
-                <td class="last">enable state.</td>
-                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#property_state"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a></small></td>
             </tr>
             </table>
 
@@ -126,42 +118,77 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>()
-        
-                                            <p>OAuthTrait constructor.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getLoginUrl">getLoginUrl</a>()
-        
-                                            <p>返回登录的 URL.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getAccessToken">getAccessToken</a>()
+                    <a href="#method___construct">__construct</a>($conditional, $current)
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_getAccessTokenCommon">getAccessTokenCommon</a>(string|null $state)
+                    <a href="#method_handle">handle</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a></small></div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_regHandle">regHandle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringHandle">stringHandle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayHandle">arrayHandle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_stringRegHandle">stringRegHandle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_arrayRegHandle">arrayRegHandle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
             </div>
             </div>
 
@@ -171,106 +198,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a> at         line 40</div>
+        <div class="location">at         line 15</div>
         <code>                    
-    <strong>__construct</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>OAuthTrait constructor.</p>                                                </div>
-                <div class="tags">
-            
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getLoginUrl">
-        <div class="location">in <a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a> at         line 50</div>
-        <code>                    void
-    <strong>getLoginUrl</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>返回登录的 URL.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getAccessToken">
-        <div class="location">in <a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a> at         line 79</div>
-        <code>                    void
-    <strong>getAccessToken</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getAccessTokenCommon">
-        <div class="location">in <a href="../../../../App/Http/Controllers/Users/OAuthKernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuthKernel">OAuthKernel</abbr></a> at         line 94</div>
-        <code>                    void
-    <strong>getAccessTokenCommon</strong>(string|null $state)
+    <strong>__construct</strong>($conditional, $current)
         </code>
     </h3>
     <div class="details">
@@ -282,18 +212,42 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string|null</td>
-                <td>$state</td>
+                <td></td>
+                <td>$conditional</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$current</td>
                 <td></td>
             </tr>
             </table>
 
             
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at         line 26</div>
+        <code>                    bool
+    <strong>handle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -308,6 +262,155 @@
             </tr>
             </table>
 
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_regHandle">
+        <div class="location">at         line 52</div>
+        <code>                    bool
+    <strong>regHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringHandle">
+        <div class="location">at         line 76</div>
+        <code>            protected        bool
+    <strong>stringHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayHandle">
+        <div class="location">at         line 88</div>
+        <code>            protected        bool
+    <strong>arrayHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stringRegHandle">
+        <div class="location">at         line 100</div>
+        <code>                    bool
+    <strong>stringRegHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_arrayRegHandle">
+        <div class="location">at         line 108</div>
+        <code>                    bool
+    <strong>arrayRegHandle</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
             
                     </div>
     </div>
