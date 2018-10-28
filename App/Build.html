@@ -79,7 +79,7 @@
     </div>
 
     <p>    class
-    <strong>Build</strong>        extends <a href="../KhsCI/Support/DBModel.html"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a>
+    <strong>Build</strong>        extends <a href="../PCIT/Support/Model.html"><abbr title="PCIT\Support\Model">Model</abbr></a>
 </p>
 
         
@@ -87,6 +87,25 @@
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CREATED_AT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UPDATED_AT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
@@ -97,7 +116,7 @@
                 </td>
                 <td>$table</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#property_table"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_table"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_set_array">
@@ -105,7 +124,47 @@
                 </td>
                 <td>$set_array</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#property_set_array"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_set_array"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryKey">
+                    static                    protected                                        
+                </td>
+                <td>$primaryKey</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_primaryKey"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_incrementing">
+                    static                    protected                                        
+                </td>
+                <td>$incrementing</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_incrementing"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_keyType">
+                    static                    protected                                        
+                </td>
+                <td>$keyType</td>
+                <td class="last">如果主键不是一个整数，则应该在模型上设置 string.</td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_keyType"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                    static                    protected                                        
+                </td>
+                <td>$timestamps</td>
+                <td class="last">默认数据表中存在 created_at 和 updated_at 这两个字段.</td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_timestamps"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connection">
+                    static                    protected                                        
+                </td>
+                <td>$connection</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Support/Model.html#property_connection"><abbr title="PCIT\Support\Model">Model</abbr></a></small></td>
             </tr>
             </table>
 
@@ -115,13 +174,23 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_chunk">chunk</a>(int $count, <a target="_blank" href="http://php.net/Closure">Closure</a> $closer)
+        
+                                            <p>结果分块.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_chunk"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;array|string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_all">all</a>()
         
                                             <p>取得所有数据.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_all"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_all"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -131,7 +200,17 @@
                     <a href="#method_find">find</a>(int $table_primary_key_id)
         
                                             <p>通过主键查找数据.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_find"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_find"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>取回符合查询限制的第一个模型 .</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_first"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -141,7 +220,18 @@
                     <a href="#method_findOrFail">findOrFail</a>(int|array $table_primary_key_id)
         
                                             <p>通过主键查找数据，找不到则抛出异常.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_findOrFail"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_findOrFail"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_firstOrFail"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -152,7 +242,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_getTableName"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_getTableName"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -163,7 +253,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_save"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_save"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -174,7 +264,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method___set"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method___set"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -185,7 +275,18 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../KhsCI/Support/DBModel.html#method_getLastKeyId"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_getLastKeyId"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(int|array $primaryKeyValue)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Support/Model.html#method_destroy"><abbr title="PCIT\Support\Model">Model</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -454,8 +555,53 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_chunk">
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_chunk"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 39</div>
+        <code>        static            void
+    <strong>chunk</strong>(int $count, <a target="_blank" href="http://php.net/Closure">Closure</a> $closer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>结果分块.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$closer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_all">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_all"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 23</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_all"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 50</div>
         <code>        static            array|string
     <strong>all</strong>()
         </code>
@@ -494,7 +640,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_find">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_find"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 41</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_find"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 68</div>
         <code>        static            int|array
     <strong>find</strong>(int $table_primary_key_id)
         </code>
@@ -542,8 +688,38 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_first"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 86</div>
+        <code>        static            void
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回符合查询限制的第一个模型 .</p>                    <p>..</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_findOrFail">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_findOrFail"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 65</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_findOrFail"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 99</div>
         <code>        static            array|int
     <strong>findOrFail</strong>(int|array $table_primary_key_id)
         </code>
@@ -591,8 +767,36 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_firstOrFail"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 110</div>
+        <code>        static            void
+    <strong>firstOrFail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getTableName">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_getTableName"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 79</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_getTableName"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 117</div>
         <code>        static            null|string
     <strong>getTableName</strong>()
         </code>
@@ -620,7 +824,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_save"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 94</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_save"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 132</div>
         <code>                    void
     <strong>save</strong>()
         </code>
@@ -657,7 +861,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method___set"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 107</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method___set"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 145</div>
         <code>                    void
     <strong>__set</strong>($name, $value)
         </code>
@@ -700,7 +904,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLastKeyId">
-        <div class="location">in <a href="../KhsCI/Support/DBModel.html#method_getLastKeyId"><abbr title="KhsCI\Support\DBModel">DBModel</abbr></a> at         line 119</div>
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_getLastKeyId"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 157</div>
         <code>        static            array|string
     <strong>getLastKeyId</strong>()
         </code>
@@ -730,6 +934,44 @@
             </tr>
             </table>
 
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">in <a href="../PCIT/Support/Model.html#method_destroy"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 167</div>
+        <code>        static            void
+    <strong>destroy</strong>(int|array $primaryKeyValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|array</td>
+                <td>$primaryKeyValue</td>
+                <td>通过主键删除数据</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
             
                     </div>
     </div>
