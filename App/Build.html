@@ -456,7 +456,7 @@
                     static&nbsp;array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_allByRid">allByRid</a>(int $rid, int|null $before, int|null $limit, bool $pr, $git_type = &#039;github&#039;)
+                    <a href="#method_allByRid">allByRid</a>(int $rid, int|null $before, int|null $limit, bool $pr, $all = false, $git_type = &#039;github&#039;)
         
                                             <p>某仓库的构建列表.</p>                </div>
                 <div class="col-md-2"></div>
@@ -1753,9 +1753,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_allByRid">
-        <div class="location">at         line 322</div>
+        <div class="location">at         line 323</div>
         <code>        static            array
-    <strong>allByRid</strong>(int $rid, int|null $before, int|null $limit, bool $pr, $git_type = &#039;github&#039;)
+    <strong>allByRid</strong>(int $rid, int|null $before, int|null $limit, bool $pr, $all = false, $git_type = &#039;github&#039;)
         </code>
     </h3>
     <div class="details">
@@ -1786,6 +1786,11 @@
                     <tr>
                 <td>bool</td>
                 <td>$pr</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$all</td>
                 <td></td>
             </tr>
                     <tr>
@@ -1822,7 +1827,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_allByAdmin">
-        <div class="location">at         line 354</div>
+        <div class="location">at         line 362</div>
         <code>        static            array
     <strong>allByAdmin</strong>(int $uid, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
         </code>
@@ -1886,7 +1891,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCommitterEmail">
-        <div class="location">at         line 378</div>
+        <div class="location">at         line 386</div>
         <code>        static            array
     <strong>getCommitterEmail</strong>(int $build_key_id)
         </code>
@@ -1933,7 +1938,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCommitterName">
-        <div class="location">at         line 392</div>
+        <div class="location">at         line 400</div>
         <code>        static            array
     <strong>getCommitterName</strong>(int $build_key_id)
         </code>
@@ -1980,7 +1985,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertTag">
-        <div class="location">at         line 419</div>
+        <div class="location">at         line 427</div>
         <code>        static            int
     <strong>insertTag</strong>($branch, $tag, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
         </code>
@@ -2092,7 +2097,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insert">
-        <div class="location">at         line 478</div>
+        <div class="location">at         line 486</div>
         <code>        static            int
     <strong>insert</strong>($event_type, $branch, $compare, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
         </code>
@@ -2209,7 +2214,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertPing">
-        <div class="location">at         line 526</div>
+        <div class="location">at         line 534</div>
         <code>        static            int
     <strong>insertPing</strong>($rid, $created_at, $git_type = &#039;github&#039;)
         </code>
@@ -2266,7 +2271,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertPullRequest">
-        <div class="location">at         line 561</div>
+        <div class="location">at         line 569</div>
         <code>        static            int
     <strong>insertPullRequest</strong>($event_time, string $action, string $commit_id, string $commit_message, int $committer_uid, string $committer_username, $pull_request_number, string $branch, $rid, string $config, $internal, $pull_request_source, string $git_type = &#039;github&#039;)
         </code>
@@ -2373,7 +2378,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateCheckSuiteId">
-        <div class="location">at         line 606</div>
+        <div class="location">at         line 614</div>
         <code>        static            void
     <strong>updateCheckSuiteId</strong>(int $rid, string $commit_id, int $check_suite_id, string $git_type = &#039;github&#039;)
         </code>
