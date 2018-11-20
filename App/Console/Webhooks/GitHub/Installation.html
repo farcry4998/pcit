@@ -114,10 +114,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;int
+                    static&nbsp;void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_delete">delete</a>(int $installation_id)
+                    <a href="#method_delete">delete</a>(int $installation_id, string $username)
         
                                             <p>用户卸载了 GitHub App.</p>                </div>
                 <div class="col-md-2"></div>
@@ -189,7 +189,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 53</div>
+        <div class="location">at         line 52</div>
         <code>        static            void
     <strong>create</strong>(array $repo, int $sender_uid)
         </code>
@@ -243,9 +243,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 74</div>
-        <code>        static            int
-    <strong>delete</strong>(int $installation_id)
+        <div class="location">at         line 72</div>
+        <code>        static            void
+    <strong>delete</strong>(int $installation_id, string $username)
         </code>
     </h3>
     <div class="details">
@@ -263,6 +263,11 @@
                 <td>$installation_id</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -270,7 +275,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
@@ -292,7 +297,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_repositories">
-        <div class="location">at         line 90</div>
+        <div class="location">at         line 89</div>
         <code>        static            void
     <strong>repositories</strong>($json_content)
         </code>

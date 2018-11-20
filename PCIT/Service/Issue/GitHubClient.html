@@ -139,7 +139,7 @@ member repositories, and organization repositories:.</p>                </div>
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_create">create</a>(string $repo_full_name, string $title, string $body, int $milestone, array $labels, array $assignees)
+                    <a href="#method_create">create</a>(string $repo_full_name, string $title, string $body, int $milestone, array $labels = null, array $assignees = null)
         
                                             <p>Create an issue.</p>                </div>
                 <div class="col-md-2"></div>
@@ -149,7 +149,7 @@ member repositories, and organization repositories:.</p>                </div>
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_edit">edit</a>(string $repo_full_name, int $issue_number, string $title, string $body, string $state, int $milestone, array $labels, array $assignees)
+                    <a href="#method_edit">edit</a>(string $repo_full_name, int $issue_number, string $title = null, string $body = null, string $state = null, int $milestone = null, array $labels = null, array $assignees = null)
         
                                             <p>Edit an issue.</p>                </div>
                 <div class="col-md-2"></div>
@@ -359,7 +359,7 @@ member repositories, and organization repositories:.</p>                        
                     <h3 id="method_create">
         <div class="location">at         line 97</div>
         <code>                    void
-    <strong>create</strong>(string $repo_full_name, string $title, string $body, int $milestone, array $labels, array $assignees)
+    <strong>create</strong>(string $repo_full_name, string $title, string $body, int $milestone, array $labels = null, array $assignees = null)
         </code>
     </h3>
     <div class="details">
@@ -431,9 +431,9 @@ member repositories, and organization repositories:.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_edit">
-        <div class="location">at         line 139</div>
+        <div class="location">at         line 135</div>
         <code>                    void
-    <strong>edit</strong>(string $repo_full_name, int $issue_number, string $title, string $body, string $state, int $milestone, array $labels, array $assignees)
+    <strong>edit</strong>(string $repo_full_name, int $issue_number, string $title = null, string $body = null, string $state = null, int $milestone = null, array $labels = null, array $assignees = null)
         </code>
     </h3>
     <div class="details">
@@ -509,13 +509,24 @@ member repositories, and organization repositories:.</p>                        
             </table>
 
             
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://developer.github.com/v3/issues/#edit-an-issue">https://developer.github.com/v3/issues/#edit-an-issue</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
                     </div>
     </div>
 
             </div>
                     <div class="method-item">
                     <h3 id="method_lock">
-        <div class="location">at         line 182</div>
+        <div class="location">at         line 171</div>
         <code>                    void
     <strong>lock</strong>(string $repo_full_name, int $issue_number, string $lock_reason = null)
         </code>
@@ -575,7 +586,7 @@ member repositories, and organization repositories:.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_unlock">
-        <div class="location">at         line 219</div>
+        <div class="location">at         line 208</div>
         <code>                    void
     <strong>unlock</strong>(string $repo_full_name, int $issue_number)
         </code>
@@ -629,7 +640,7 @@ member repositories, and organization repositories:.</p>                        
             </div>
                     <div class="method-item">
                     <h3 id="method_timeline">
-        <div class="location">at         line 242</div>
+        <div class="location">at         line 231</div>
         <code>                    mixed
     <strong>timeline</strong>(string $repo_full_name, int $issue_number)
         </code>

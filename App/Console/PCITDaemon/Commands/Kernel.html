@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>App\Console\PCITDaemon\UpCommand | API</title>
+    <title>App\Console\PCITDaemon\Commands\Kernel | API</title>
 
-            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
-        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
-        <script src="../../../js/jquery-1.11.1.min.js"></script>
-        <script src="../../../js/bootstrap.min.js"></script>
-        <script src="../../../js/typeahead.min.js"></script>
-        <script src="../../../sami.js"></script>
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
         <meta name="MobileOptimized" content="width">
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
@@ -19,14 +19,14 @@
     
     </head>
 
-    <body id="class" data-name="class:App_Console_PCITDaemon_UpCommand" data-root-path="../../../">
+    <body id="class" data-name="class:App_Console_PCITDaemon_Commands_Kernel" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
                 <script>
             $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
         </script>
-        <form id="search-form" action="../../../search.html" method="GET">
+        <form id="search-form" action="../../../../search.html" method="GET">
             <span class="glyphicon glyphicon-search"></span>
             <input name="search"
                    class="typeahead form-control"
@@ -48,16 +48,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">API</a>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../../../classes.html">Classes</a></li>
-                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
-                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
-                    <li><a href="../../../traits.html">Traits</a></li>
-                    <li><a href="../../../doc-index.html">Index</a></li>
-                    <li><a href="../../../search.html">Search</a></li>
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
                 </ul>
             </div>
         </div>
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/Console.html">Console</a></li><li class="backslash">\</li><li><a href="../../../App/Console/PCITDaemon.html">PCITDaemon</a></li><li class="backslash">\</li><li>UpCommand</li>
+                        <li><a href="../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../App/Console.html">Console</a></li><li class="backslash">\</li><li><a href="../../../../App/Console/PCITDaemon.html">PCITDaemon</a></li><li class="backslash">\</li><li><a href="../../../../App/Console/PCITDaemon/Commands.html">Commands</a></li><li class="backslash">\</li><li>Kernel</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            UpCommand
+            Kernel
                 
         </h1>
     </div>
 
-    <p>    class
-    <strong>UpCommand</strong>        extends <abbr title="Symfony\Component\Console\Command\Command">Command</abbr>
+    <p>abstract     class
+    <strong>Kernel</strong>        extends <abbr title="Symfony\Component\Console\Command\Command">Command</abbr>
 </p>
 
         
@@ -88,21 +88,23 @@
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_handler">
+                                        protected                                        <a href="../../../../App/Console/PCITDaemon/Kernel.html"><abbr title="App\Console\PCITDaemon\Kernel">Kernel</abbr></a>
+                </td>
+                <td>$handler</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string|null $name = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     void
@@ -125,6 +127,17 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_process_execute">process_execute</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -132,37 +145,8 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 16</div>
-        <code>                    
-    <strong>__construct</strong>(string|null $name = null)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string|null</td>
-                <td>$name</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_configure">
-        <div class="location">at         line 21</div>
+        <div class="location">at         line 22</div>
         <code>            protected        void
     <strong>configure</strong>()
         </code>
@@ -190,7 +174,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_execute">
-        <div class="location">at         line 34</div>
+        <div class="location">at         line 35</div>
         <code>            protected        void
     <strong>execute</strong>(<abbr title="Symfony\Component\Console\Input\InputInterface">InputInterface</abbr> $input, <abbr title="Symfony\Component\Console\Output\OutputInterface">OutputInterface</abbr> $output)
         </code>
@@ -215,6 +199,43 @@
             </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_process_execute">
+        <div class="location">at         line 85</div>
+        <code>            protected        void
+    <strong>process_execute</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
