@@ -235,7 +235,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;null|string
+                    static&nbsp;string|null
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_getTableName">getTableName</a>()
@@ -316,6 +316,17 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_updateAccessToken">updateAccessToken</a>(int $uid, string $access_token, string $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateRefreshToken">updateRefreshToken</a>(int $uid, string $refresh_token, string $git_type = &#039;github&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -669,7 +680,7 @@
                     <div class="method-item">
                     <h3 id="method_getTableName">
         <div class="location">in <a href="../PCIT/Support/Model.html#method_getTableName"><abbr title="PCIT\Support\Model">Model</abbr></a> at         line 117</div>
-        <code>        static            null|string
+        <code>        static            string|null
     <strong>getTableName</strong>()
         </code>
     </h3>
@@ -683,7 +694,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>null|string</td>
+            <td>string|null</td>
             <td></td>
         </tr>
     </table>
@@ -1041,8 +1052,65 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setOrgAdmin">
+                    <h3 id="method_updateRefreshToken">
         <div class="location">at         line 119</div>
+        <code>        static            void
+    <strong>updateRefreshToken</strong>(int $uid, string $refresh_token, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$uid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$refresh_token</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOrgAdmin">
+        <div class="location">at         line 133</div>
         <code>        static            void
     <strong>setOrgAdmin</strong>(int $org_id, int $admin_uid, string $git_type = &#039;github&#039;)
         </code>
@@ -1099,7 +1167,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteOrgAdmin">
-        <div class="location">at         line 135</div>
+        <div class="location">at         line 149</div>
         <code>        static            void
     <strong>deleteOrgAdmin</strong>()
         </code>
@@ -1127,7 +1195,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getOrgByAdmin">
-        <div class="location">at         line 147</div>
+        <div class="location">at         line 161</div>
         <code>        static            array
     <strong>getOrgByAdmin</strong>(int $admin_uid, string $git_type = &#039;github&#039;)
         </code>
@@ -1179,7 +1247,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_exists">
-        <div class="location">at         line 162</div>
+        <div class="location">at         line 176</div>
         <code>        static            int
     <strong>exists</strong>(string $username, string $git_type = &#039;github&#039;)
         </code>
@@ -1231,7 +1299,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 179</div>
+        <div class="location">at         line 193</div>
         <code>        static            int
     <strong>delete</strong>(string $org_name, string $git_type = &#039;github&#039;)
         </code>
@@ -1283,7 +1351,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUid">
-        <div class="location">at         line 194</div>
+        <div class="location">at         line 208</div>
         <code>        static            string
     <strong>getUid</strong>(string $username, string $git_type = &#039;github&#039;)
         </code>
@@ -1335,7 +1403,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUsername">
-        <div class="location">at         line 209</div>
+        <div class="location">at         line 223</div>
         <code>        static            string
     <strong>getUsername</strong>(int $uid, string $git_type)
         </code>
@@ -1387,7 +1455,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateInstallationId">
-        <div class="location">at         line 223</div>
+        <div class="location">at         line 237</div>
         <code>        static            void
     <strong>updateInstallationId</strong>(int $installation_id, string $username, string $git_type = &#039;github&#039;)
         </code>
@@ -1444,7 +1512,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getUserBasicInfo">
-        <div class="location">at         line 243</div>
+        <div class="location">at         line 257</div>
         <code>        static            array|string
     <strong>getUserBasicInfo</strong>(string|null $username, int|null $uid, string $git_type = &#039;github&#039;)
         </code>

@@ -86,14 +86,40 @@
     
 
             <div class="description">
-            <p>Agent run job, need docker.</p>                                </div>
+            <p>TODO.</p>            <p>与数据库交互的操作全部移到 Server 节点，Agent 节点严禁与数据库直接交互</p>
+
+<p>Agent run job, need docker.</p>                    </div>
     
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_pcit">
+                                                                                
+                </td>
+                <td>$pcit</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../App/Console/PCITDaemon/Kernel.html#property_pcit"><abbr title="App\Console\PCITDaemon\Kernel">Kernel</abbr></a></small></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
                     <div class="row">
                 <div class="col-md-2 type">
                     
@@ -107,13 +133,22 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJob">getJob</a>()
+        
+                                            <p>TODO 从服务端获取待执行 job.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cacheHandler">cacheHandler</a>(string $job_id)
+                    <a href="#method_updateBuildStatus">updateBuildStatus</a>(int $build_key_id)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>TODO.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -123,8 +158,27 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 26</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at         line 25</div>
+        <div class="location">at         line 44</div>
         <code>                    
     <strong>handle</strong>()
         </code>
@@ -151,23 +205,46 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_cacheHandler">
-        <div class="location">at         line 90</div>
-        <code>                    void
-    <strong>cacheHandler</strong>(string $job_id)
+                    <h3 id="method_getJob">
+        <div class="location">at         line 36</div>
+        <code>                    
+    <strong>getJob</strong>()
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>TODO 从服务端获取待执行 job.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBuildStatus">
+        <div class="location">at         line 101</div>
+        <code>                    void
+    <strong>updateBuildStatus</strong>(int $build_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>TODO.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$job_id</td>
+                <td>int</td>
+                <td>$build_key_id</td>
                 <td></td>
             </tr>
             </table>
@@ -183,15 +260,6 @@
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>

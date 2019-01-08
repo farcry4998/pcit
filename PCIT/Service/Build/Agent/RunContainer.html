@@ -118,17 +118,6 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cacheHandle">cacheHandle</a>(string $job_id)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8 type">
                     <a href="#method_runCacheContainer">runCacheContainer</a>(int $job_id, bool $download = true)
         
                                             <p class="no-description">No description</p>
@@ -140,7 +129,7 @@
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_runPipeline">runPipeline</a>(int $job_id, string $container_config)
+                    <a href="#method_runPipeline">runPipeline</a>(int $job_id, string $container_config, string $pipeline = null)
         
                                             <p>启动容器.</p>                </div>
                 <div class="col-md-2"></div>
@@ -153,7 +142,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 36</div>
+        <div class="location">at         line 37</div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -183,7 +172,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at         line 49</div>
+        <div class="location">at         line 51</div>
         <code>                    void
     <strong>handle</strong>(int $job_id)
         </code>
@@ -233,59 +222,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_cacheHandle">
-        <div class="location">at         line 170</div>
-        <code>                    void
-    <strong>cacheHandle</strong>(string $job_id)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$job_id</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../../PCIT/Exception/PCITException.html"><abbr title="PCIT\Exception\PCITException">PCITException</abbr></a></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_runCacheContainer">
-        <div class="location">at         line 199</div>
+        <div class="location">at         line 163</div>
         <code>                    void
     <strong>runCacheContainer</strong>(int $job_id, bool $download = true)
         </code>
@@ -337,9 +275,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_runPipeline">
-        <div class="location">at         line 226</div>
+        <div class="location">at         line 190</div>
         <code>                    void
-    <strong>runPipeline</strong>(int $job_id, string $container_config)
+    <strong>runPipeline</strong>(int $job_id, string $container_config, string $pipeline = null)
         </code>
     </h3>
     <div class="details">
@@ -360,6 +298,11 @@
                     <tr>
                 <td>string</td>
                 <td>$container_config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pipeline</td>
                 <td></td>
             </tr>
             </table>
