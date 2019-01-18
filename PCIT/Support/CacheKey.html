@@ -105,7 +105,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_pipelineHashKey">pipelineHashKey</a>(int $jobId, string $type = &#039;pipeline&#039;)
@@ -120,6 +120,17 @@
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_pipelineListKey">pipelineListKey</a>(int $jobId, string $type = &#039;pipeline&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pipelineDumpListKey">pipelineDumpListKey</a>(int $jobId, string $type = &#039;pipeline&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -171,13 +182,23 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_cacheKey">cacheKey</a>(int $jobId, $type = &#039;download&#039;)
+                    <a href="#method_cacheKey">cacheKey</a>(int $jobId, string $type = &#039;download&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_flush">flush</a>(int $jobId)
+        
+                                            <p>删除某个 job 所用到的缓存.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -188,7 +209,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_cloneKey">
-        <div class="location">at         line 9</div>
+        <div class="location">at         line 32</div>
         <code>        static            
     <strong>cloneKey</strong>(int $jobId)
         </code>
@@ -217,8 +238,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pipelineHashKey">
-        <div class="location">at         line 17</div>
-        <code>        static            
+        <div class="location">at         line 43</div>
+        <code>        static            string
     <strong>pipelineHashKey</strong>(int $jobId, string $type = &#039;pipeline&#039;)
         </code>
     </h3>
@@ -238,11 +259,20 @@
                     <tr>
                 <td>string</td>
                 <td>$type</td>
-                <td></td>
+                <td>pipeline | success | failure | changed</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -251,7 +281,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pipelineListKey">
-        <div class="location">at         line 22</div>
+        <div class="location">at         line 48</div>
         <code>        static            
     <strong>pipelineListKey</strong>(int $jobId, string $type = &#039;pipeline&#039;)
         </code>
@@ -284,8 +314,42 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_pipelineDumpListKey">
+        <div class="location">at         line 53</div>
+        <code>        static            
+    <strong>pipelineDumpListKey</strong>(int $jobId, string $type = &#039;pipeline&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$jobId</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_pipelineListCopyKey">
-        <div class="location">at         line 27</div>
+        <div class="location">at         line 61</div>
         <code>        static            
     <strong>pipelineListCopyKey</strong>(int $jobId, string $type = &#039;pipeline&#039;)
         </code>
@@ -319,7 +383,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_serviceHashKey">
-        <div class="location">at         line 41</div>
+        <div class="location">at         line 75</div>
         <code>        static            
     <strong>serviceHashKey</strong>(int $jobId)
         </code>
@@ -348,7 +412,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_notificationsHashKey">
-        <div class="location">at         line 46</div>
+        <div class="location">at         line 80</div>
         <code>        static            
     <strong>notificationsHashKey</strong>(int $jobId)
         </code>
@@ -377,7 +441,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_logHashKey">
-        <div class="location">at         line 51</div>
+        <div class="location">at         line 85</div>
         <code>        static            
     <strong>logHashKey</strong>(int $jobId)
         </code>
@@ -406,9 +470,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cacheKey">
-        <div class="location">at         line 59</div>
-        <code>        static            
-    <strong>cacheKey</strong>(int $jobId, $type = &#039;download&#039;)
+        <div class="location">at         line 96</div>
+        <code>        static            string
+    <strong>cacheKey</strong>(int $jobId, string $type = &#039;download&#039;)
         </code>
     </h3>
     <div class="details">
@@ -425,14 +489,72 @@
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$type</td>
+                <td>type download | upload</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_flush">
+        <div class="location">at         line 108</div>
+        <code>        static            void
+    <strong>flush</strong>(int $jobId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>删除某个 job 所用到的缓存.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$jobId</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>

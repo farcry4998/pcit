@@ -79,7 +79,7 @@
     </div>
 
     <p>abstract     class
-    <strong>Handler</strong>
+    <strong>Handler</strong>        extends <a target="_blank" href="http://php.net/Exception">Exception</a>
 </p>
 
         
@@ -89,6 +89,113 @@
     
     
     
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_report">report</a>(<abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr> $exception)
+        
+                                            <p>用于记录异常或将其发送到外部服务</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>($request, <abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr> $exception)
+        
+                                            <p>负责将给定的异常转换成发送给浏览器的 HTTP 响应.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_report">
+        <div class="location">at         line 12</div>
+        <code>                    void
+    <strong>report</strong>(<abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>用于记录异常或将其发送到外部服务</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">at         line 19</div>
+        <code>                    
+    <strong>render</strong>($request, <abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>负责将给定的异常转换成发送给浏览器的 HTTP 响应.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="PCIT\Foundation\Exceptions\Exception">Exception</abbr></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
     
             </div>
                 <div id="footer">
