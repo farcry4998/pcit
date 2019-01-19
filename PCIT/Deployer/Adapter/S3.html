@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>PCIT\Service\Authorizations\GitHubClient | API</title>
+    <title>PCIT\Deployer\Adapter\S3 | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:PCIT_Service_Authorizations_GitHubClient" data-root-path="../../../">
+    <body id="class" data-name="class:PCIT_Deployer_Adapter_S3" data-root-path="../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../PCIT.html">PCIT</a></li><li class="backslash">\</li><li><a href="../../../PCIT/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../PCIT/Service/Authorizations.html">Authorizations</a></li><li class="backslash">\</li><li>GitHubClient</li>
+                        <li><a href="../../../PCIT.html">PCIT</a></li><li class="backslash">\</li><li><a href="../../../PCIT/Deployer.html">Deployer</a></li><li class="backslash">\</li><li><a href="../../../PCIT/Deployer/Adapter.html">Adapter</a></li><li class="backslash">\</li><li>S3</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            GitHubClient
+            S3
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>GitHubClient</strong>
+    <strong>S3</strong>        extends <a href="../../../PCIT/Deployer/Adapter/AbstractAdapter.html"><abbr title="PCIT\Deployer\Adapter\AbstractAdapter">AbstractAdapter</abbr></a>
 </p>
 
         
@@ -87,15 +87,91 @@
 
     
     
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>PROVIDER</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
             <h2>Properties</h2>
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_app">
-                                                                                <a href="../../../PCIT/PCIT.html"><abbr title="PCIT\PCIT">PCIT</abbr></a>
+                <td class="type" id="property_region">
+                                                                                
                 </td>
-                <td>$app</td>
+                <td>$region</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_access_key_id">
+                                                                                
+                </td>
+                <td>$access_key_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_secret_access_key">
+                                                                                
+                </td>
+                <td>$secret_access_key</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bucket">
+                                                                                
+                </td>
+                <td>$bucket</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_acl">
+                                                                                
+                </td>
+                <td>$acl</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_local_dir">
+                                                                                
+                </td>
+                <td>$local_dir</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_upload_dir">
+                                                                                
+                </td>
+                <td>$upload_dir</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_endpoint">
+                                                                                
+                </td>
+                <td>$endpoint</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_minio">
+                                                                                
+                </td>
+                <td>$minio</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -110,7 +186,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../PCIT/PCIT.html"><abbr title="PCIT\PCIT">PCIT</abbr></a> $app)
+                    <a href="#method_deploy">deploy</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -118,10 +194,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_list">list</a>(string $username, string $password)
+                    <a href="#method___construct">__construct</a>(array $config)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -134,10 +210,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 20</div>
+                    <h3 id="method_deploy">
+        <div class="location">at         line 34</div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../PCIT/PCIT.html"><abbr title="PCIT\PCIT">PCIT</abbr></a> $app)
+    <strong>deploy</strong>()
         </code>
     </h3>
     <div class="details">
@@ -145,16 +221,6 @@
     
 
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a href="../../../PCIT/PCIT.html"><abbr title="PCIT\PCIT">PCIT</abbr></a></td>
-                <td>$app</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -163,10 +229,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_list">
-        <div class="location">at         line 36</div>
-        <code>                    mixed
-    <strong>list</strong>(string $username, string $password)
+                    <h3 id="method___construct">
+        <div class="location">at         line 21</div>
+        <code>                    
+    <strong>__construct</strong>(array $config)
         </code>
     </h3>
     <div class="details">
@@ -178,43 +244,15 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$username</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$password</td>
+                <td>array</td>
+                <td>$config</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
-                            <h4>See also</h4>
-
-                    <table class="table table-condensed">
-            </table>
-
                     </div>
     </div>
 
