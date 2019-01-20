@@ -129,9 +129,20 @@
                     array
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_handleEnv">handleEnv</a>($pipelineEnv)
+                    <a href="#method_handleEnv">handleEnv</a>(array $pipelineEnv)
         
                                             <p>整合 pipelineEnv systemEnv matrixEnv.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handleCommands">handleCommands</a>($pipeline, $pipelineContent)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -153,7 +164,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 48</div>
+        <div class="location">at         line 50</div>
         <code>                    
     <strong>__construct</strong>($pipeline, <a href="../../../PCIT/Builder/BuildData.html"><abbr title="PCIT\Builder\BuildData">BuildData</abbr></a>|null $build, <a href="../../../PCIT/Builder/Client.html"><abbr title="PCIT\Builder\Client">Client</abbr></a>|null $client, array|null $matrix_config)
         </code>
@@ -208,7 +219,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleDeployer">
-        <div class="location">at         line 65</div>
+        <div class="location">at         line 67</div>
         <code>                    array
     <strong>handleDeployer</strong>($settings, $env)
         </code>
@@ -260,7 +271,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_checkWhen">
-        <div class="location">at         line 102</div>
+        <div class="location">at         line 104</div>
         <code>                    bool
     <strong>checkWhen</strong>($when)
         </code>
@@ -307,9 +318,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleEnv">
-        <div class="location">at         line 154</div>
+        <div class="location">at         line 156</div>
         <code>                    array
-    <strong>handleEnv</strong>($pipelineEnv)
+    <strong>handleEnv</strong>(array $pipelineEnv)
         </code>
     </h3>
     <div class="details">
@@ -323,7 +334,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$pipelineEnv</td>
                 <td></td>
             </tr>
@@ -346,8 +357,51 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_handleCommands">
+        <div class="location">at         line 173</div>
+        <code>                    array
+    <strong>handleCommands</strong>($pipeline, $pipelineContent)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$pipeline</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pipelineContent</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at         line 174</div>
+        <div class="location">at         line 197</div>
         <code>                    void
     <strong>handle</strong>()
         </code>
