@@ -94,20 +94,21 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;array|mixed|string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_image">image</a>(string $image, array|null $config)
-        
-                                            <p>解析 镜像名 中包含的 变量.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_command">command</a>(string $setup, string $image, array|null $commands)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_text">text</a>(string $text, $env)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -120,62 +121,8 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_image">
-        <div class="location">at         line 22</div>
-        <code>        static            array|mixed|string
-    <strong>image</strong>(string $image, array|null $config)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>解析 镜像名 中包含的 变量.</p>                                                </div>
-                <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$image</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array|null</td>
-                <td>$config</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array|mixed|string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_command">
-        <div class="location">at         line 63</div>
+        <div class="location">at         line 21</div>
         <code>        static            string
     <strong>command</strong>(string $setup, string $image, array|null $commands)
         </code>
@@ -225,6 +172,55 @@
             </tr>
             </table>
 
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_text">
+        <div class="location">at         line 56</div>
+        <code>        static            bool|string
+    <strong>text</strong>(string $text, $env)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$env</td>
+                <td>&lt;</p>
+
+<p>pre> ['K=V','K2=V2']</p>
+
+<p>&lt;</p>
+
+<p>pre></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
             
                     </div>
     </div>
