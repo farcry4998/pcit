@@ -1497,7 +1497,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateBuildStatusByCommitId">
-        <div class="location">at         line 225</div>
+        <div class="location">at         line 202</div>
         <code>        static            int
     <strong>updateBuildStatusByCommitId</strong>(string $build_status, int $rid, string $branch, string $commit_id, $git_type = &#039;github&#039;)
         </code>
@@ -1564,7 +1564,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLastBuildStatus">
-        <div class="location">at         line 244</div>
+        <div class="location">at         line 221</div>
         <code>        static            string
     <strong>getLastBuildStatus</strong>(int $rid, string $branch)
         </code>
@@ -1616,7 +1616,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_buildStatusIsChanged">
-        <div class="location">at         line 259</div>
+        <div class="location">at         line 236</div>
         <code>        static            bool
     <strong>buildStatusIsChanged</strong>(int $rid, string $branch)
         </code>
@@ -1668,7 +1668,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBranches">
-        <div class="location">at         line 280</div>
+        <div class="location">at         line 257</div>
         <code>        static            array
     <strong>getBranches</strong>(int $rid, $git_type = &#039;github&#039;)
         </code>
@@ -1720,7 +1720,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCurrentBuildKeyId">
-        <div class="location">at         line 297</div>
+        <div class="location">at         line 274</div>
         <code>        static            string
     <strong>getCurrentBuildKeyId</strong>(int $rid, $git_type = &#039;github&#039;)
         </code>
@@ -1774,7 +1774,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConfig">
-        <div class="location">at         line 320</div>
+        <div class="location">at         line 297</div>
         <code>        static            string
     <strong>getConfig</strong>(int $build_key_id)
         </code>
@@ -1821,7 +1821,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBuildStatusByBuildKeyId">
-        <div class="location">at         line 334</div>
+        <div class="location">at         line 317</div>
         <code>        static            string
     <strong>getBuildStatusByBuildKeyId</strong>(int $build_key_id)
         </code>
@@ -1868,7 +1868,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBranch">
-        <div class="location">at         line 348</div>
+        <div class="location">at         line 331</div>
         <code>        static            string
     <strong>getBranch</strong>($build_key_id)
         </code>
@@ -1915,7 +1915,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_allByBranch">
-        <div class="location">at         line 368</div>
+        <div class="location">at         line 351</div>
         <code>        static            array
     <strong>allByBranch</strong>(int $rid, string $branch_name, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
         </code>
@@ -1984,7 +1984,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_allByRid">
-        <div class="location">at         line 409</div>
+        <div class="location">at         line 392</div>
         <code>        static            array
     <strong>allByRid</strong>(int $rid, int|null $before, int|null $limit, bool $pr, $all = false, $git_type = &#039;github&#039;)
         </code>
@@ -2058,7 +2058,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_allByAdmin">
-        <div class="location">at         line 460</div>
+        <div class="location">at         line 443</div>
         <code>        static            array
     <strong>allByAdmin</strong>(int $uid, int|null $before, int|null $limit, $git_type = &#039;github&#039;)
         </code>
@@ -2122,7 +2122,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCommitterEmail">
-        <div class="location">at         line 490</div>
+        <div class="location">at         line 473</div>
         <code>        static            array
     <strong>getCommitterEmail</strong>(int $build_key_id)
         </code>
@@ -2169,7 +2169,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCommitterName">
-        <div class="location">at         line 504</div>
+        <div class="location">at         line 487</div>
         <code>        static            array
     <strong>getCommitterName</strong>(int $build_key_id)
         </code>
@@ -2216,7 +2216,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertTag">
-        <div class="location">at         line 531</div>
+        <div class="location">at         line 514</div>
         <code>        static            int
     <strong>insertTag</strong>($branch, $tag, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;)
         </code>
@@ -2328,7 +2328,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insert">
-        <div class="location">at         line 591</div>
+        <div class="location">at         line 574</div>
         <code>        static            int
     <strong>insert</strong>($event_type, $branch, $compare, $commit_id, $commit_message, $committer_name, $committer_email, $committer_username, $author_name, $author_email, $author_username, $rid, $event_time, $config, $git_type = &#039;github&#039;, bool $unique = false)
         </code>
@@ -2450,7 +2450,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertPing">
-        <div class="location">at         line 642</div>
+        <div class="location">at         line 625</div>
         <code>        static            int
     <strong>insertPing</strong>($rid, $created_at, $git_type = &#039;github&#039;)
         </code>
@@ -2507,7 +2507,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_insertPullRequest">
-        <div class="location">at         line 677</div>
+        <div class="location">at         line 660</div>
         <code>        static            int
     <strong>insertPullRequest</strong>($event_time, string $action, string $commit_id, string $commit_message, int $committer_uid, string $committer_username, $pull_request_number, string $branch, $rid, string $config, $internal, $pull_request_source, string $git_type = &#039;github&#039;)
         </code>
@@ -2614,7 +2614,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateCheckSuiteId">
-        <div class="location">at         line 722</div>
+        <div class="location">at         line 705</div>
         <code>        static            void
     <strong>updateCheckSuiteId</strong>(int $rid, string $commit_id, int $check_suite_id, string $git_type = &#039;github&#039;)
         </code>
@@ -2676,7 +2676,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteLog">
-        <div class="location">at         line 734</div>
+        <div class="location">at         line 717</div>
         <code>        static            void
     <strong>deleteLog</strong>(int $buildId)
         </code>
