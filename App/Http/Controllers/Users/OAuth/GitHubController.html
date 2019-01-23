@@ -93,7 +93,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_oauth">
-                    static                    protected                                        <a href="../../../../../PCIT/Service/OAuth/GitHubClient.html"><abbr title="PCIT\Service\OAuth\GitHubClient">GitHubClient</abbr></a>|<a href="../../../../../PCIT/Service/OAuth/CodingClient.html"><abbr title="PCIT\Service\OAuth\CodingClient">CodingClient</abbr></a>|<a href="../../../../../PCIT/Service/OAuth/GiteeClient.html"><abbr title="PCIT\Service\OAuth\GiteeClient">GiteeClient</abbr></a>
+                    static                    protected                                        <a href="../../../../../PCIT/Service/GitHub/OAuth/Client.html"><abbr title="PCIT\Service\GitHub\OAuth\Client">Client</abbr></a>|<a href="../../../../../PCIT/Service/Coding/OAuth/Client.html"><abbr title="PCIT\Service\Coding\OAuth\Client">Client</abbr></a>|<a href="../../../../../PCIT/Service/Gitee/OAuth/Client.html"><abbr title="PCIT\Service\Gitee\OAuth\Client">Client</abbr></a>
                 </td>
                 <td>$oauth</td>
                 <td class="last"></td>
@@ -182,7 +182,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 40</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 39</div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -210,7 +210,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoginUrl">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 50</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 49</div>
         <code>                    void
     <strong>getLoginUrl</strong>()
         </code>
@@ -240,7 +240,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessToken">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 83</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 82</div>
         <code>                    void
     <strong>getAccessToken</strong>()
         </code>
@@ -279,7 +279,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenCommon">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 100</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 99</div>
         <code>                    void
     <strong>getAccessTokenCommon</strong>(string|null $state)
         </code>
@@ -326,7 +326,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleRefreshToken">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 144</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 150</div>
         <code>                    void
     <strong>handleRefreshToken</strong>(int $uid, $refreshToken, $gitType)
         </code>
@@ -367,6 +367,15 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
