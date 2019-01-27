@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>App\Http\Controllers\Profile\GogsController | API</title>
+    <title>App\Http\Controllers\OAuth\IndexController | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:App_Http_Controllers_Profile_GogsController" data-root-path="../../../../">
+    <body id="class" data-name="class:App_Http_Controllers_OAuth_IndexController" data-root-path="../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers/Profile.html">Profile</a></li><li class="backslash">\</li><li>GogsController</li>
+                        <li><a href="../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers/OAuth.html">OAuth</a></li><li class="backslash">\</li><li>IndexController</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            GogsController
+            IndexController
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>GogsController</strong>        extends <a href="../../../../App/Http/Controllers/Profile/Kernel.html"><abbr title="App\Http\Controllers\Profile\Kernel">Kernel</abbr></a>
+    <strong>IndexController</strong>
 </p>
 
         
@@ -88,32 +88,42 @@
     
     
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_git_type">
-                                        protected                                        
-                </td>
-                <td>$git_type</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClass">getClass</a>($gitType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLoginUrl">getLoginUrl</a>(string $gitType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___invoke">__invoke</a>(mixed ...$args)
+                    <a href="#method_getAccessToken">getAccessToken</a>(string $gitType)
         
-                                            <p>个人中心 profile.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/Profile/Kernel.html#method___invoke"><abbr title="App\Http\Controllers\Profile\Kernel">Kernel</abbr></a></small></div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
             </div>
             </div>
 
@@ -122,25 +132,81 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method___invoke">
-        <div class="location">in <a href="../../../../App/Http/Controllers/Profile/Kernel.html#method___invoke"><abbr title="App\Http\Controllers\Profile\Kernel">Kernel</abbr></a> at         line 32</div>
-        <code>                    void
-    <strong>__invoke</strong>(mixed ...$args)
+                    <h3 id="method_getClass">
+        <div class="location">at         line 9</div>
+        <code>                    
+    <strong>getClass</strong>($gitType)
         </code>
     </h3>
     <div class="details">
             
     
 
-                    <div class="method-description">
-                                    <p>个人中心 profile.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
-                <td>...$args</td>
+                <td></td>
+                <td>$gitType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoginUrl">
+        <div class="location">at         line 26</div>
+        <code>                    
+    <strong>getLoginUrl</strong>(string $gitType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$gitType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAccessToken">
+        <div class="location">at         line 33</div>
+        <code>                    void
+    <strong>getAccessToken</strong>(string $gitType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$gitType</td>
                 <td></td>
             </tr>
             </table>
@@ -156,15 +222,6 @@
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
-                <td></td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>App\Http\Controllers\Users\OAuth\GitHubController | API</title>
+    <title>App\Http\Controllers\OAuth\Coding\IndexController | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
     
     </head>
 
-    <body id="class" data-name="class:App_Http_Controllers_Users_OAuth_GitHubController" data-root-path="../../../../../">
+    <body id="class" data-name="class:App_Http_Controllers_OAuth_Coding_IndexController" data-root-path="../../../../../">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -66,20 +66,20 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers/Users.html">Users</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers/Users/OAuth.html">OAuth</a></li><li class="backslash">\</li><li>GitHubController</li>
+                        <li><a href="../../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers/OAuth.html">OAuth</a></li><li class="backslash">\</li><li><a href="../../../../../App/Http/Controllers/OAuth/Coding.html">Coding</a></li><li class="backslash">\</li><li>IndexController</li>
             </ol>
         </div>
                 <div id="page-content">
                 
     <div class="page-header">
         <h1>
-            GitHubController
+            IndexController
                 
         </h1>
     </div>
 
     <p>    class
-    <strong>GitHubController</strong>        extends <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a>
+    <strong>IndexController</strong>        extends <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a>
 </p>
 
         
@@ -93,11 +93,11 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_oauth">
-                    static                    protected                                        <a href="../../../../../PCIT/Service/GitHub/OAuth/Client.html"><abbr title="PCIT\Service\GitHub\OAuth\Client">Client</abbr></a>|<a href="../../../../../PCIT/Service/Coding/OAuth/Client.html"><abbr title="PCIT\Service\Coding\OAuth\Client">Client</abbr></a>|<a href="../../../../../PCIT/Service/Gitee/OAuth/Client.html"><abbr title="PCIT\Service\Gitee\OAuth\Client">Client</abbr></a>
+                    static                    protected                                        
                 </td>
                 <td>$oauth</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#property_oauth"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type" id="property_git_type">
@@ -109,11 +109,11 @@
             </tr>
                     <tr>
                 <td class="type" id="property_state">
-                                        protected                                        
+                                        protected                                        bool
                 </td>
                 <td>$state</td>
-                <td class="last"></td>
-                <td></td>
+                <td class="last">enable state.</td>
+                <td><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#property_state"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></td>
             </tr>
             </table>
 
@@ -130,7 +130,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -140,7 +140,7 @@
                     <a href="#method_getLoginUrl">getLoginUrl</a>()
         
                                             <p>获取登录的 URL.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -150,7 +150,7 @@
                     <a href="#method_getAccessToken">getAccessToken</a>()
         
                                             <p>服务器重定向页面.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -161,7 +161,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -172,7 +172,7 @@
         
                                             <p class="no-description">No description</p>
                                     </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a></small></div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a></small></div>
             </div>
             </div>
 
@@ -182,7 +182,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 39</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method___construct"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a> at         line 39</div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -210,7 +210,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getLoginUrl">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 49</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getLoginUrl"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a> at         line 49</div>
         <code>                    void
     <strong>getLoginUrl</strong>()
         </code>
@@ -240,7 +240,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessToken">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 82</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getAccessToken"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a> at         line 82</div>
         <code>                    void
     <strong>getAccessToken</strong>()
         </code>
@@ -279,7 +279,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getAccessTokenCommon">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 99</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_getAccessTokenCommon"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a> at         line 99</div>
         <code>                    void
     <strong>getAccessTokenCommon</strong>(string|null $state)
         </code>
@@ -326,7 +326,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handleRefreshToken">
-        <div class="location">in <a href="../../../../../App/Http/Controllers/Users/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\Users\OAuth\Kernel">Kernel</abbr></a> at         line 150</div>
+        <div class="location">in <a href="../../../../../App/Http/Controllers/OAuth/Kernel.html#method_handleRefreshToken"><abbr title="App\Http\Controllers\OAuth\Kernel">Kernel</abbr></a> at         line 150</div>
         <code>                    void
     <strong>handleRefreshToken</strong>(int $uid, $refreshToken, $gitType)
         </code>
